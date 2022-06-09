@@ -11,4 +11,9 @@ jobs:
       - name: multilin script
         run: |
           node -v
-          npm -v  
+          npm -v
+      - name: Pythin Commands
+        run: |
+          import platform
+          print(platform.processor())
+        shell: python        
