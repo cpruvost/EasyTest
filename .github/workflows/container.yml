@@ -1,0 +1,15 @@
+name: Container
+
+on: [push, workflow_dispatch]
+
+jobs:
+  node-docker:
+    runs-on: ubuntu-latest
+    container:
+      image: cpruvost/minecraftiac:latest
+    steps:
+      - name: Terraform version
+        run: |
+          oci -v
+          terraform -v
+          
