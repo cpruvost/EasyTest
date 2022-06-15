@@ -6,7 +6,7 @@ jobs:
   node-docker:
     runs-on: ubuntu-latest
     container:
-      image: cpruvost/minecraftiac:latest
+      image: cpruvost/terransible:latest
     steps:
       - name: Terraform version
         run: |
